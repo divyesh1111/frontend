@@ -1,18 +1,17 @@
 import React from 'react'
-import { AiOutlineHome } from 'react-icons/ai';
+import { FaHome } from 'react-icons/fa';
 
 function Header() {
-    const menuItems = [
-        { key: "new", name: "New File" },
-        { key: "copy", name: "Copy Link" },
-        { key: "edit", name: "Edit File" },
-        { key: "delete", name: "Delete File" },
-      ];
+   
   return (
 
     <div>
         <div className='bg-black text-white text-2xl grid grid-cols-2 '>
-            <div className="font-bold py-5 px-5">HOME</div>
+            <div className="font-bold py-5 px-5 flex ">
+                
+                <FaHome className='mr-3  '  size='2rem'/>
+                HOME
+            </div>
             <ul className='flex gap-7 py-5 px-10 justify-end '>
                 
                 <li className='hover:font-bold '>
@@ -38,7 +37,7 @@ function Header() {
 
             </div>
             <div>
-                <ul className='flex gap-4 justify-end px-6'>
+                <ul className='flex  text-white gap-4 justify-end px-6 my-3'>
                     <li>
                         login
                     </li>
